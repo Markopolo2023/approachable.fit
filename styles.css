@@ -1,0 +1,35 @@
+/* Custom styles for Approachable Fit */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-navy {
+  background-color: #1e3a8a;
+}
+
+.text-navy {
+  color: #1e3a8a;
+}
+
+#reviews-carousel .transition-transform {
+  transition: transform 0.5s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+.transform {
+  transition: transform 0.3s ease;
+}
+
+section {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
