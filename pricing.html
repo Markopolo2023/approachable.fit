@@ -19,6 +19,7 @@
         <div class="flex items-center space-x-6">
           <a href="index.html" class="hover:text-orange-400 transition">Home</a>
           <a href="pricing.html" class="hover:text-orange-400 transition">Pricing</a>
+          <a href="first-time.html" class="hover:text-orange-400 transition">First Time</a>
           <a href="contact.html" class="hover:text-orange-400 transition">Contact</a>
         </div>
       </div>
@@ -38,7 +39,10 @@
             <li>Custom workout plan</li>
             <li>Email support</li>
           </ul>
-          <a href="contact.html" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600">Select Plan</a>
+          <div class="flex justify-center space-x-4">
+            <a href="https://square.link/u/basic_plan" target="_blank" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600" aria-label="Pay online for Basic Plan">Pay Online</a>
+            <button onclick="showInPersonPopup('Basic')" class="bg-gray-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700" aria-label="Pay in person for Basic Plan">Pay in Person</button>
+          </div>
         </div>
         <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition">
           <h3 class="text-2xl font-semibold text-navy mb-4">Standard</h3>
@@ -48,7 +52,10 @@
             <li>Custom workout plan</li>
             <li>Nutrition guidance</li>
           </ul>
-          <a href="contact.html" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600">Select Plan</a>
+          <div class="flex justify-center space-x-4">
+            <a href="https://square.link/u/standard_plan" target="_blank" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600" aria-label="Pay online for Standard Plan">Pay Online</a>
+            <button onclick="showInPersonPopup('Standard')" class="bg-gray-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700" aria-label="Pay in person for Standard Plan">Pay in Person</button>
+          </div>
         </div>
         <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 transition">
           <h3 class="text-2xl font-semibold text-navy mb-4">Premium</h3>
@@ -59,7 +66,10 @@
             <li>Nutrition guidance</li>
             <li>Priority support</li>
           </ul>
-          <a href="contact.html" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600">Select Plan</a>
+          <div class="flex justify-center space-x-4">
+            <a href="https://square.link/u/premium_plan" target="_blank" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600" aria-label="Pay online for Premium Plan">Pay Online</a>
+            <button onclick="showInPersonPopup('Premium')" class="bg-gray-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700" aria-label="Pay in person for Premium Plan">Pay in Person</button>
+          </div>
         </div>
       </div>
     </div>
@@ -71,9 +81,11 @@
       <p class="mb-4">© 2025 Approachable Fit. All rights reserved.</p>
       <div class="flex justify-center space-x-4">
         <a href="mailto:info@approachable.fit" class="hover:text-orange-400">info@approachable.fit</a>
-        <a href="tel:+1234567890" class="hover:text-orange-400">+1 (234) 567-890</a>
+        <a href="tel:+12066401120" class="hover:text-orange-400">+1 (206) 640-1120</a>
       </div>
     </div>
   </footer>
+
+  <script src="payments.js"></script>
 </body>
 </html>
